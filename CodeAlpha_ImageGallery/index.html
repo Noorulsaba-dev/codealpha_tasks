@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="Images/img-1.jpg" class="image" onclick="openLightbox(0)">
+        <img src="Images/img-2.jpg" class="image" onclick="openLightbox(1)">
+        <img src="Images/img-3.jpg" class="image" onclick="openLightbox(2)">
+        <img src="Images/img-4.jpg" class="image" onclick="openLightbox(3)">
+        <img src="Images/img-5.jpg" class="image" onclick="openLightbox(4)">
+        <img src="Images/img-6.jpg" class="image" onclick="openLightbox(5)">
+        <img src="Images/img-7.jpg" class="image" onclick="openLightbox(6)">
+        <img src="Images/img-8.jpg" class="image" onclick="openLightbox(7)">
+        <img src="Images/img-9.jpg" class="image" onclick="openLightbox(8)">
+        <img src="Images/img-10.jpg" class="image" onclick="openLightbox(8)">
+        <img src="Images/img-11.jpg" class="image" onclick="openLightbox(8)">
+    </div>
+
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+        <img id="lightbox-img">
+        <button class="next" onclick="changeImage(1)">❯</button>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
